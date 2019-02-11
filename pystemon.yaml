@@ -75,11 +75,13 @@ search:
 #    to: ''             # (optional) Additional recipients for email alert, comma separated list
 
   - search: '147\.251\.[0-9]{1,3}\.[0-9]{1,3}'
-    description: MU IP range
+    description: MU IPv4 range
     count: 1
   - search: '(muni\.cz)|([Mm]asaryk [Uu]niversity)'
     description: MU keywords
     count: 1
+  - search: '(2001\:0?718\:0?805\:)|(2001\:0?718\:0?801\:)|(2001\:0?718\:0?800\:0{0,3}1\:)|(2001\:0?718\:0?800\:0{0,3}5\:)'
+    description: MU IPv6 range 
 
 #####
 # Configuration section for the paste sites
