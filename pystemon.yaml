@@ -3,7 +3,7 @@
 
 archive:
   save: yes             # Keep a copy of pasties that triggered alerts
-  save-all: yes         # Keep a copy of all pasties
+  save-all: no         # Keep a copy of all pasties
   dir: "alerts"         # Directory where matching pasties should be kept
   dir-all: "archive"    # Directory where all pasties should be kept (if save-all is set to yes)
   compress: yes         # Store the pasties compressed
@@ -154,12 +154,12 @@ site:
     update-max: 70
     update-min: 60
 
-  pastebin.ru:
-    archive-url: 'http://pastebin.ru/'
-    archive-regex: '<a href="/(\w+)">'
-    download-url: 'http://pastebin.ru/{id}'
-    update-max: 70
-    update-min: 60
+#  pastebin.ru:
+#    archive-url: 'http://pastebin.ru/'
+#    archive-regex: '<a href="/(\w+)">'
+#    download-url: 'http://pastebin.ru/{id}'
+#    update-max: 70
+#    update-min: 60
 
   pastebin.fr:
     archive-url: 'http://pastebin.fr'
